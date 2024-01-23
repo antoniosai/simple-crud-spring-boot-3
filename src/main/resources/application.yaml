@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    initialization-mode: always
+    password: your_postgres_password
+    platform: postgres
+    url: jdbc:postgresql://localhost:5431/your_specific_db
+    username: your_username
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: false
+    show-sql: true
+  output:
+    ansi:
+      enabled: ALWAYS
